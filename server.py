@@ -6,7 +6,7 @@ import os
 def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
-        name = "Theo"
+        name = "Theo Johnson"
     message = "Bonjour, " + name + "!\n"
     return Response(message)
 
